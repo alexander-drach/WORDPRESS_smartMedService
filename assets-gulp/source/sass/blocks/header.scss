@@ -27,6 +27,7 @@
   line-height: 100%;
 
   .hamb {
+    position: relative;
     display: none;
     width: 30px;
     height: 30px;
@@ -38,15 +39,27 @@
     background-position: center;
     background-image: url(../img/svg/icon-hamb.svg);
     background-color: transparent;
+    z-index: 50;
 
-    @include vp-1439 {
+    @include vp-1023 {
       display: block;
     }
   }
 
   .nav {
     @include vp-1023 {
-      display: none;
+      position: fixed;
+      left: 0;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      background-color: $color-dark;
+      display: flex;
+      justify-content: center;
+      padding-top: 190px;
+      opacity: 0;
+      pointer-events: none;
+      transition: 0.5s opacity ease;
     }
   }
 
@@ -83,9 +96,12 @@
       margin-right: 36px;
 
       @include vp-1023 {
+       text-align: center;
+       font-size: 24px;
        margin-right: 0;
+
       
-       margin-bottom: 40px;
+       margin-bottom: 50px;
       }
 
       &:last-child {
