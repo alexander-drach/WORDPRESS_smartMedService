@@ -1,0 +1,39 @@
+// Vendor
+// ---------------------------------
+
+@import "vendor/normalize";
+// Swiper 8.4.7
+@import "vendor/swiper";
+
+// Global
+// ---------------------------------
+
+@import "variables";
+@import "mixins";
+@import "global/fonts";
+@import "global/reboot";
+@import "global/utils";
+@import "global/container";
+
+// Blocks
+// ---------------------------------
+
+@import "blocks/btn";
+@import "blocks/custom-input";
+@import "blocks/custom-toggle";
+@import "blocks/list";
+@import "blocks/section.scss";
+@import "blocks/title-section.scss";
+@import "blocks/messenger-list.scss";
+@import "blocks/link-text-color.scss";
+
+@import "blocks/header";
+@import "blocks/footer";
+
+@import "blocks/intro";
+@import "blocks/about.scss";
+@import "blocks/services.scss";
+@import "blocks/full-block.scss";
+@import "blocks/team.scss";
+@import "blocks/payment.scss";
+@import "blocks/contact.scss";

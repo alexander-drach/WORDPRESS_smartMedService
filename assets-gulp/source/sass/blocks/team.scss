@@ -1,0 +1,15 @@
+.team {
+    h2 {
+        margin-bottom: 16px;
+    }
+
+    .messenger-list {
+        margin-bottom: 48px;
+    }
+}
+
+.team__desc {
+    @include text-20-150;
+
+    margin-bottom: 48px;
+}

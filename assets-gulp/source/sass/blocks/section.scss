@@ -1,0 +1,7 @@
+.section {
+    margin-bottom: 120px;
+
+    @include vp-639 {
+        margin-bottom: 60px;
+    }
+}

@@ -1,0 +1,66 @@
+.contact {
+    background-color: $color-light-grey;
+
+    .btn {
+        margin-top: 30px;
+    }
+
+    .link-text-color--phone {
+        margin-bottom: 32px;
+    }
+
+    .form {
+        span {
+            @include vp-1023 {
+                display: block;
+            }
+        }
+    }
+}
+
+.contact__inner {
+    padding-top: 80px;
+    padding-bottom: 130px;
+
+    @include vp-1023 {
+        padding-bottom: 60px;
+    }
+}
+
+.contact__wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+
+    @include vp-1023 {
+        grid-template-columns: 1fr;
+    }
+
+    @include vp-639 {
+    }
+}
+
+.label-block {
+    display: inline-block;
+    color: $color-dark-50;
+    text-transform: uppercase;
+    font-weight: 500;
+    margin-bottom: 12px;
+}
+
+.label-messengers {
+    margin-top: 16px;
+    margin-bottom: 8px;
+}
+
+
+
+.label-email {
+    margin-bottom: 8px;
+}
+
+.contact__messengers {
+    @include vp-1023 {
+        margin-bottom: 60px;
+    }
+}
+

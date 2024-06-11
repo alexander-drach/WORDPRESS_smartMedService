@@ -1,0 +1,50 @@
+.full-block {
+    h2 {
+        display: inline-block;
+
+        &::before {
+            content: "";
+            display: block;
+            width: 100%;
+            height: 4px;
+            margin-bottom: 12px;
+            background-color: $color-turqoise-50;
+        }
+
+    }
+
+    img {
+        border-radius: 16px;
+    }
+
+    figure {
+        margin: 0;
+    }
+
+    figcaption {
+        font-size: 20px;
+        line-height: 130%;
+        font-weight: 500;
+        margin-top: 21px;
+    }
+}
+
+.full-block__desc {
+    @include text-20-150;
+    margin-bottom: 48px;
+}
+
+.images-list {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 24px;
+    margin-bottom: 60px;
+
+    @include vp-1023 {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    @include vp-639 {
+        grid-template-columns: repeat(1, 1fr);
+    }
+}

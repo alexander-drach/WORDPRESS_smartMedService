@@ -1,0 +1,40 @@
+.intro {
+    position: relative;
+    min-height: 740px;
+    overflow: hidden;
+
+    @include vp-1023 {
+       min-height: auto;
+    }
+    
+    img {
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+}
+
+.intro__inner {
+    position: relative;
+    padding-top: 245px;
+    padding-bottom: 180px;
+
+    @include vp-1023 {
+        padding-top: 40px;
+     }
+    
+    z-index: 1;
+}
+
+.intro__desc {
+    font-size: 32px;
+    line-height: 130%;
+    margin-bottom: 60px;
+
+    @include vp-1023 {
+        font-size: 22px;
+    }
+}

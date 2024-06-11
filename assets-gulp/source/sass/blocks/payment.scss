@@ -1,0 +1,51 @@
+.payment__list {
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr;
+    gap: 24px;
+
+    @include vp-1023 {
+        grid-template-columns: 1fr;
+    }
+}
+
+.paiment__item {
+    padding: 62px 100px;
+    border-radius: 16px;
+
+    @include vp-1023 {
+        padding: 40px 20px;
+    }
+}
+
+.paiment__item--title {
+    background-color: $color-dark;
+
+    h2 {
+        color: $color-default-white;
+        margin-bottom: 12px;
+    }
+}
+
+.paiment__item--type {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    background-color: $color-light-grey;
+
+    svg {
+        margin-bottom: 16px;
+    }
+
+    span {
+        font-weight: 500;
+    }
+}
+
+.payment__desc {
+    @include text-20-150;
+
+    p {
+        color: $color-default-white;
+    }
+}

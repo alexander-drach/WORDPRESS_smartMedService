@@ -1,0 +1,109 @@
+.header {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  padding-top: 23px;
+  padding-bottom: 23px;
+  background-color: $color-dark;
+  color: $color-white-80;
+  z-index: 8000;
+
+
+  &.admin-toolbar {
+    top: 32px;
+  }
+
+  a {
+    color: $color-white-80;
+    font-weight: 500;
+    text-transform: uppercase;
+
+    @include hover-focus {
+     color: $color-orange;
+    }
+  }
+
+  line-height: 100%;
+
+  .hamb {
+    display: none;
+    width: 30px;
+    height: 30px;
+    flex-shrink: 0;
+    border: none;
+    padding: 0;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    background-image: url(../img/svg/icon-hamb.svg);
+    background-color: transparent;
+
+    @include vp-1439 {
+      display: block;
+    }
+  }
+
+  .nav {
+    @include vp-1023 {
+      display: none;
+    }
+  }
+
+  &.open {
+    .hamb {
+      background-image: url("../img/svg/icon-close.svg");
+    }
+
+    .nav {
+      opacity: 1;
+      pointer-events: all;
+    }
+  }
+
+  .header_inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    @include vp-1023 {
+      justify-content: space-between;
+    }
+  }
+
+  .main-menu {
+    display: flex;
+
+    @include vp-1023 {
+     flex-direction: column;
+     margin-bottom: 50px;
+    }
+
+    li {
+      margin-right: 36px;
+
+      @include vp-1023 {
+       margin-right: 0;
+      
+       margin-bottom: 40px;
+      }
+
+      &:last-child {
+        margin-right: 0;
+
+        @include vp-1023 {
+          margin-bottom: 0;
+        }
+      }
+    }
+  }
+}
+
+.logo {
+  svg {
+    @include vp-1023 {
+      width: 240px;
+      height: 27px;
+    }
+  }
+}

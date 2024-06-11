@@ -1,0 +1,10 @@
+.link-text-color {
+    display: block;
+    font-size: 20px;
+    color: $color-turqoise;
+    font-weight: 500;
+
+    @include hover-focus {
+        color: $color-orange;
+    }
+}
