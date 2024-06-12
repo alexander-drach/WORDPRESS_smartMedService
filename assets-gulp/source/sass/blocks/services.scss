@@ -23,6 +23,12 @@
     }
 }
 
+.services-item {
+    @include vp-1023 {
+        margin-bottom: 30px;
+    }
+}
+
 .services-item__desc {
     @include text-20-150;
 

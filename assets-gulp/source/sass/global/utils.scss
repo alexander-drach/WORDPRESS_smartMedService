@@ -6,7 +6,7 @@
   min-height: 100vh;
   /* stylelint-disable-next-line */
   min-height: calc(100 * var(--vh, 1vh));
-  padding-top: 92px;
+  padding-top: 60px;
 
   @include vp-1023 {
     padding-top: 76px;

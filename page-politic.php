@@ -4,9 +4,9 @@ Template Name: Страница - Политика и условия
 */
 ?><?php get_header(); ?>
     <main class="page-politic">
-        <div class="container">
-            <h1><?php the_title(); ?></h1>
+        <div class="container">            
             <div class="page-content">
+                <h1><?php the_title(); ?></h1>
                 <?php the_content(); ?>
             </div>
         </div>
