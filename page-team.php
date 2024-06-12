@@ -4,7 +4,7 @@ Template Name: Страница - Специалисты
 */
 ?>
 <?php get_header(); ?>
-    <main class="team">
+    <main class="team-page">
         <div class="container">
             <h1 class="title-section"><?php the_title(); ?></h1>
             <?php if( have_rows('speczialisty') ): ?>
