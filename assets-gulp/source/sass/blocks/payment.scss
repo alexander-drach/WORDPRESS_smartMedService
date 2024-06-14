@@ -13,6 +13,7 @@
     border-radius: 16px;
 
     @include vp-1023 {
+        text-align: center;
         padding: 40px 20px;
     }
 }

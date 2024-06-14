@@ -3,6 +3,8 @@ $name = $_POST['name'];
 $phone = $_POST['tel'];
 $message = $_POST['message'];
 
+$email = "smartmedservice@mail.ru ";
+
 if ($_POST['check'] != 'nospam') exit('Spam detected');
 
 if ($phone && $name) {
@@ -11,7 +13,7 @@ if ($phone && $name) {
 "Телефон: $phone" . "\n" .
 "Собщение: $message";
 
-  mail('alexander-drach@mail.ru', 'С сайта СмартМедСервис', $send_message);
+  mail($email, 'С сайта СмартМедСервис', $send_message);
 }
 
 $url = 'http://smartmedservice/wp-content/themes/smartMedServise-theme';

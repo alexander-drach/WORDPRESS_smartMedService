@@ -3,7 +3,8 @@
 Template Name: Страница - Главная
 */
 
-$phone_number = "79293612364";
+$email = "smartmedservice@mail.ru ";
+$phone_number = "79087955400";
 $formatted_phone_number = preg_replace('/(\d{1})(\d{3})(\d{3})(\d{2})(\d{2})/', '+7 ($2) $3 $4 $5', $phone_number);
 ?><?php get_header(); ?>
     <main>
@@ -179,7 +180,7 @@ $formatted_phone_number = preg_replace('/(\d{1})(\d{3})(\d{3})(\d{2})(\d{2})/', 
                             <div class="label-email">
                                 Email
                             </div>
-                            <a class="link-text-color link-text-color--email" href="mailto:zakaz@smartmed.ru">zakaz@smartmed.ru</a>
+                            <a class="link-text-color link-text-color--email" href="mailto:<?php echo $email?>"><?php echo $email?></a>
                         </div>
 
                         <div class="contact__form">

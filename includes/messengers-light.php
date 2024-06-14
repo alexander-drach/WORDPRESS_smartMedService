@@ -1,5 +1,5 @@
 <?php
-    $phone_number = "79293612364";
+    $phone_number = "79087955400";
 ?>
 <a href="tel:<?php echo $phone_number?>" target="_blank">
     <svg width="30" height="30">
