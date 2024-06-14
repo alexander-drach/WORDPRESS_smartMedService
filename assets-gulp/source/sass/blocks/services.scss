@@ -27,6 +27,10 @@
     @include vp-1023 {
         margin-bottom: 30px;
     }
+
+    &:last-child {
+        margin-bottom: 0;
+    }
 }
 
 .services-item__desc {

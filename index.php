@@ -173,7 +173,7 @@ $formatted_phone_number = preg_replace('/(\d{1})(\d{3})(\d{3})(\d{2})(\d{2})/', 
                             <div class="label-messengers">
                                 Телефон, Whatsapp, Telegram
                             </div>
-                            <a class="link-text-color link-text-color--phone" href="tel:79293612364"><?php echo $formatted_phone_number?></a>
+                            <a class="link-text-color link-text-color--phone" href="tel:<?php echo $phone_number?>"><?php echo $formatted_phone_number?></a>
                             <svg width="32" height="32">
                                 <use xlink:href="<?php echo get_template_directory_uri() ?>/assets-gulp/build/img/sprite.svg#icon-email-dark"></use>
                             </svg>

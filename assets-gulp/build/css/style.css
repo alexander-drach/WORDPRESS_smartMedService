@@ -1805,7 +1805,7 @@ p:last-child {
 .section {
   margin-bottom: 120px;
 }
-@media (max-width: 639px) {
+@media (max-width: 1023px) {
   .section {
     margin-bottom: 60px;
   }
@@ -1813,6 +1813,11 @@ p:last-child {
 
 .title-section {
   margin-bottom: 48px;
+}
+@media (max-width: 1023px) {
+  .title-section {
+    margin-bottom: 25px;
+  }
 }
 
 .messenger-list {
@@ -1866,6 +1871,7 @@ p:last-child {
   color: rgba(255, 255, 255, 0.8);
   font-weight: 500;
   text-transform: uppercase;
+  white-space: nowrap;
 }
 @media (hover: hover) {
   .header a:hover:not(.focus-visible) {
@@ -1934,6 +1940,8 @@ p:last-child {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 }
 @media (max-width: 1023px) {
   .header .header_inner {
@@ -2099,6 +2107,9 @@ p:last-child {
     margin-bottom: 30px;
   }
 }
+.services-item:last-child {
+  margin-bottom: 0;
+}
 
 .services-item__desc {
   font-size: 20px;
@@ -2192,6 +2203,7 @@ p:last-child {
   .images-list {
     -ms-grid-columns: (1fr)[2];
     grid-template-columns: repeat(2, 1fr);
+    margin-bottom: 15px;
   }
 }
 @media (max-width: 639px) {
@@ -2237,7 +2249,7 @@ p:last-child {
   padding: 62px 100px;
   border-radius: 16px;
 }
-@media (max-width: 1023px) {
+@media (max-width: 1279px) {
   .paiment__item {
     text-align: center;
     padding: 40px 20px;
